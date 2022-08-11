@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    /* ### Primary */
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-bg);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 320px;
+    background-color: var(--card-bg);
+    padding: 1.3rem;
+    border-radius: 10px;
+}
+
+.container .main-img {
+    position: relative;
+}
+
+.container .main-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main-img .cyan-bg {
+    position: absolute;
+    background-color: hsl(178, 100%, 50%, 0.5);
+    width: 100%;
+    height: calc(100% - 4px);
+    top: 0;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.main-img .cyan-bg:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.main-img .cyan-bg svg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.description {
+    margin: 1.3rem 0 1rem 0;
+}
+
+.description h2 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.description h2:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.description p {
+    line-height: 1.6rem;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1rem;
+}
+
+ul li {
+    display: flex;
+    gap: .3rem;
+    align-items: center;
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+ul li .price {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+
+.creator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.creator img {
+    width: 12%;
+    border-radius: 50%;
+    border: 2px solid var(--white)
+}
+
+.creator p {
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.creator .creator-name {
+    color: var(--white);
+}
+
+.creator .creator-name:hover {
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 2px;
+    color: var(--white);
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--soft-blue);
+    text-decoration: none;
+}
