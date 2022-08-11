@@ -13,7 +13,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 
 ## Overview
-This QR Code Component was a simple fun project. I used CSS variables, flexbox and some common CSS properties.
 
 Simple one page project. I used CSS common properties, variable and flexbox. 
 
